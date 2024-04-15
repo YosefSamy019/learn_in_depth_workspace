@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 15, 2024
+ *      Author: asus
+ */
+
+
+#include <stdio.h>
+
+void main() {
+	int num;
+
+	printf("Enter Number: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d",&num);
+
+	if(num & 1 == 0){
+		printf("%d is Even\n",num);
+	}else{
+		printf("%d is Odd\n",num);
+	}
+
+}

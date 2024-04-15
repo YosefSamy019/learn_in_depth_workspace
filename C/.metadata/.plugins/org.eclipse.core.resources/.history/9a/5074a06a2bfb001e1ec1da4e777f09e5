@@ -1,0 +1,77 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 15, 2024
+ *      Author: asus
+ */
+
+#include <stdio.h>
+
+void main() {
+
+	int num;
+
+	printf("Enter Number: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d", &num);
+
+	if (num < 0) {
+		printf("%d is negative\n", num);
+	} else {
+		printf("%d is positive\n", num);
+	}
+}
+
+void ex1() {
+	int num;
+
+	printf("Enter Number: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d", &num);
+
+	if ((num & 1) == 0) {
+		printf("%d is Even\n", num);
+	} else {
+		printf("%d is Odd\n", num);
+	}
+
+}
+
+void ex2() {
+	char c, flag = 0;
+
+	printf("Enter an alphapet: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%c", &c);
+
+	flag = (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u')
+			|| (c == 'A') || (c == 'E') || (c == 'I') || (c == 'O')
+			|| (c == 'U');
+
+	if (flag) {
+		printf("%c is vowel\n", c);
+	} else {
+		printf("%c is consonant\n", c);
+	}
+}
+
+void ex3() {
+	float n1, n2, n3;
+	float max;
+
+	printf("Enter 3 Numbers: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%f%f%f", &n1, &n2, &n3);
+
+	max = n1;
+	if (max < n2)
+		max = n2;
+	if (max < n3)
+		max = n3;
+
+	printf("Large Number: %f", max);
+}

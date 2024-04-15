@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 15, 2024
+ *      Author: asus
+ */
+
+
+#include <stdio.h>
+
+void main(){
+	unsigned int no = 0;
+
+	printf("Enter Example No: ");
+	scanf("%d",&no);
+
+	switch(no){
+	case 1:
+		{
+			printf("C Programming");
+			break;
+		}
+	case 2:
+		{
+			int number;
+
+			printf("Enter an Integer: ");
+			scanf("%d",&number);
+			break;
+		}
+
+	}
+}

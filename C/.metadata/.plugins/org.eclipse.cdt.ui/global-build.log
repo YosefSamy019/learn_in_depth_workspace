@@ -1,0 +1,46 @@
+Info: Nothing to build for homework_2
+15:40:33 **** Incremental Build of configuration Debug for project homework_2 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+   10 | void main() {
+      |      ^~~~
+..\main.c: In function 'ex6':
+..\main.c:144:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  144 |         printf("sum: %d", res);
+      |                      ~^   ~~~
+      |                       |   |
+      |                       int long long int
+      |                      %lld
+..\main.c: In function 'ex7':
+..\main.c:163:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  163 |                 printf("fact: %d", res);
+      |                               ~^   ~~~
+      |                                |   |
+      |                                int long long int
+      |                               %lld
+gcc -o homework_2.exe main.o 
+15:42:36 **** Incremental Build of configuration Debug for project homework_2 ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:19:6: warning: return type of 'main' is not 'int' [-Wmain]
+   19 | void main() {
+      |      ^~~~
+..\main.c: In function 'ex6':
+..\main.c:151:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  151 |         printf("sum: %d", res);
+      |                      ~^   ~~~
+      |                       |   |
+      |                       int long long int
+      |                      %lld
+..\main.c: In function 'ex7':
+..\main.c:170:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+  170 |                 printf("fact: %d", res);
+      |                               ~^   ~~~
+      |                                |   |
+      |                                int long long int
+      |                               %lld
+gcc -o homework_2.exe main.o 
+Info: Nothing to build for homework_2

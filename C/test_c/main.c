@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 9, 2024
+ *      Author: asus
+ */
+
+
+#include <stdio.h>
+
+
+void main(){
+	char s[] = {'h','e'};
+
+	printf("%s\n",s);
+
+
+}
