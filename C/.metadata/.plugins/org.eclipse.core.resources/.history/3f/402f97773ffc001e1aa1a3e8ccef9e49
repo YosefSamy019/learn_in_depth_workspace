@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ Name        : homework_3_strings.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+#define MAX_SI 30
+
+int main(void) {
+	char arr[MAX_SI];
+	int i;
+
+	printf("Enter String: ");
+
+	fflush(stdin);
+	fflush(stdout);
+	gets(arr);
+
+	for(i=0;arr[i]!=0;i++);
+
+	printf("Len: %d\n",i);
+
+	return 0;
+}
+
+void ex1() {
+	char arr[MAX_SI], c;
+	int i, freq = 0;
+
+	printf("Enter String: ");
+
+	fflush(stdin);
+	fflush(stdout);
+	gets(arr);
+
+	printf("Enter char to find Freq: ");
+
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%c", &c);
+
+	for (i = 0; i < MAX_SI && arr[i] != 0; i++) {
+		if (arr[i] == c) {
+			freq++;
+		}
+	}
+
+	printf("Freq = %d\n", freq);
+}

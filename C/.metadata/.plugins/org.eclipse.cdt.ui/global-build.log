@@ -1,15 +1,30 @@
-23:52:30 **** Incremental Build of configuration Debug for project homework_3_array ****
+00:13:48 **** Rebuild of configuration Debug for project homework_3_strings ****
 Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
 Info: Internal Builder is used for build
-gcc -o homework_3_array.exe main.o 
-Info: Nothing to build for homework_3_array
-Info: Nothing to build for homework_3_array
-Info: Nothing to build for homework_3_array
-23:54:05 **** Incremental Build of configuration Debug for project homework_3_array ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_3_strings.o" "..\\src\\homework_3_strings.c" 
+gcc -o homework_3_strings.exe "src\\homework_3_strings.o" 
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
+00:16:28 **** Incremental Build of configuration Debug for project homework_3_strings ****
 Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:16:6: warning: return type of 'main' is not 'int' [-Wmain]
-   16 | void main() {
-      |      ^~~~
-gcc -o homework_3_array.exe main.o 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_3_strings.o" "..\\src\\homework_3_strings.c" 
+gcc -o homework_3_strings.exe "src\\homework_3_strings.o" 
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
+00:20:11 **** Incremental Build of configuration Debug for project homework_3_strings ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_3_strings.o" "..\\src\\homework_3_strings.c" 
+gcc -o homework_3_strings.exe "src\\homework_3_strings.o" 
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
+00:21:05 **** Incremental Build of configuration Debug for project homework_3_strings ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_3_strings.o" "..\\src\\homework_3_strings.c" 
+gcc -o homework_3_strings.exe "src\\homework_3_strings.o" 
+Info: Nothing to build for homework_3_strings
+Info: Nothing to build for homework_3_strings
