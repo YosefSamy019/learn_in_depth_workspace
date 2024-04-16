@@ -1,0 +1,53 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 16, 2024
+ *      Author: asus
+ */
+
+#include <stdio.h>
+
+#define SI 2
+
+void main() {
+	float arr1[SI][SI];
+	float arr2[SI][SI];
+	float sum[SI][SI];
+	int i, j;
+
+	printf("Enter elements of 1st matrix\n");
+	for (i = 0; i < SI; i++) {
+		for (j = 0; j < SI; j++) {
+			printf("Enter a%d%d: ", i + 1, j + 1);
+			fflush(stdin);
+			fflush(stdout);
+			scanf("%f", &arr1[i][j]);
+		}
+	}
+
+	printf("Enter elements of 2st matrix\n");
+	for (i = 0; i < SI; i++) {
+		for (j = 0; j < SI; j++) {
+			printf("Enter b%d%d: ", i + 1, j + 1);
+			fflush(stdin);
+			fflush(stdout);
+			scanf("%f", &arr2[i][j]);
+		}
+	}
+
+	for (i = 0; i < SI; i++) {
+		for (j = 0; j < SI; j++) {
+			sum[i][j] = arr1[i][j] + arr2[i][j];
+		}
+	}
+
+
+	printf("Sum of matrix:\n");
+	for (i = 0; i < SI; i++) {
+		for (j = 0; j < SI; j++) {
+			printf("%f ",sum[i][j]);
+		}
+		printf("\n");
+	}
+}
+

@@ -1,0 +1,11 @@
+23:23:59 **** Rebuild of configuration Debug for project homework_3_arrays ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:12:6: warning: return type of 'main' is not 'int' [-Wmain]
+   12 | void main() {
+      |      ^~~~
+gcc -o homework_3_arrays.exe main.o 
+
+23:24:00 Build Finished (took 433ms)
+
