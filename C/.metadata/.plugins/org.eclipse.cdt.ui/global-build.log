@@ -1,100 +1,23 @@
-14:39:15 **** Incremental Build of configuration Debug for project homework_4_functions ****
+01:20:36 **** Rebuild of configuration Debug for project homework_5_structures ****
 Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
 Info: Internal Builder is used for build
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-14:40:39 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-..\src\homework_4_functions.c: In function 'reverse':
-..\src\homework_4_functions.c:19:14: warning: unused variable 'temp' [-Wunused-variable]
-   19 |         char temp = ptr[0];
-      |              ^~~~
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-14:41:09 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-14:43:24 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-14:44:09 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-14:44:32 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-14:44:48 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-14:45:09 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-14:45:34 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\homework_4_functions.o" 
-14:49:20 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example_3.o" "..\\src\\example_3.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\example_3.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-14:50:36 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example_4.o" "..\\src\\example_4.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\example_3.o" "src\\example_4.o" "src\\homework_4_functions.o" 
-d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\homework_4_functions.o: in function `main':
-D:\Projects\learn_in_depth_workspace\C\homework_4_functions\Debug/../src/homework_4_functions.c:18: multiple definition of `main'; src\example_4.o:D:\Projects\learn_in_depth_workspace\C\homework_4_functions\Debug/../src/example_4.c:20: first defined here
-collect2.exe: error: ld returned 1 exit status
-14:50:54 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\example_4.o" "..\\src\\example_4.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\example_3.o" "src\\example_4.o" "src\\homework_4_functions.o" 
-14:51:15 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-..\src\homework_4_functions.c: In function 'main':
-..\src\homework_4_functions.c:40:17: warning: implicit declaration of function 'ex5'; did you mean 'ex4'? [-Wimplicit-function-declaration]
-   40 |                 ex5();
-      |                 ^~~
-      |                 ex4
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\example_3.o" "src\\example_4.o" "src\\homework_4_functions.o" 
-d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\homework_4_functions.o: in function `main':
-D:\Projects\learn_in_depth_workspace\C\homework_4_functions\Debug/../src/homework_4_functions.c:40: undefined reference to `ex5'
-collect2.exe: error: ld returned 1 exit status
-14:51:26 **** Incremental Build of configuration Debug for project homework_4_functions ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\homework_4_functions.o" "..\\src\\homework_4_functions.c" 
-gcc -o homework_4_functions.exe "src\\example_1.o" "src\\example_2.o" "src\\example_3.o" "src\\example_4.o" "src\\homework_4_functions.o" 
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
-Info: Nothing to build for homework_4_functions
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_2.o "..\\ex_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_3.o "..\\ex_3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_4.o "..\\ex_4.c" 
+..\ex_4.c: In function 'ex_4':
+..\ex_4.c:48:41: warning: unknown escape sequence: '\D'
+   48 |         printf("\Display inforamtion \n");
+      |                                         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_6.o "..\\ex_6.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_1.o "..\\ex_1.c" 
+..\ex_1.c: In function 'ex_1':
+..\ex_1.c:40:41: warning: unknown escape sequence: '\D'
+   40 |         printf("\Display inforamtion \n");
+      |                                         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_5.o "..\\ex_5.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o homework_5_structures.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o ex_6.o main.o 
+Info: Nothing to build for homework_5_structures
+Info: Nothing to build for homework_5_structures
+Info: Nothing to build for homework_5_structures
+Info: Nothing to build for homework_5_structures

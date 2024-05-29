@@ -5,14 +5,14 @@
  *      Author: asus
  */
 
-
 #include <stdio.h>
 
 
-void main(){
-	char s[] = {'h','e'};
 
-	printf("%s\n",s);
+void main() {
+	int x = 3;
+	int y = 32;
 
-
+	printf("%d %d\n", x, y);
 }
+

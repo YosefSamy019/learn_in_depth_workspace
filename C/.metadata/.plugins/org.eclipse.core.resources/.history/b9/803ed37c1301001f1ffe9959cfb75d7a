@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 9, 2024
+ *      Author: asus
+ */
+
+#include <stdio.h>
+
+void main() {
+	register int x;
+	register int y;
+
+	printf("%d %d\n", x,y);
+}
+
+

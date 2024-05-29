@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 9, 2024
+ *      Author: asus
+ */
+
+#include <stdio.h>
+
+extern int x;
+void main() {
+	extern x
+	printf("%d\n", x);
+
+}
+
+extern int x=2;
+
