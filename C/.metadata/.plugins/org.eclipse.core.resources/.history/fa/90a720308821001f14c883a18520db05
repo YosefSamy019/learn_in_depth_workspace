@@ -1,0 +1,23 @@
+/*
+ * ex_1.c
+ *
+ *  Created on: Jun 3, 2024
+ *      Author: asus
+ */
+
+
+#include<stdio.h>
+
+void ex_1(){
+	int m = 29;
+	printf("Addess of m: 0x%x\nValue of m: %d",&m,m);
+
+
+	int* ap = &m;
+	printf("Addess of pointer: 0x%x\nValue of pointer: %d",ab,*ab);
+
+}
+
+
+
+

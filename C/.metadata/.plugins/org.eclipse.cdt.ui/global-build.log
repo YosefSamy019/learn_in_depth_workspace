@@ -1,23 +1,67 @@
-01:20:36 **** Rebuild of configuration Debug for project homework_5_structures ****
+12:28:57 **** Rebuild of configuration Debug for project homework_6_pointers ****
 Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_5.o "..\\ex_5.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_1.o "..\\ex_1.c" 
+..\ex_1.c: In function 'ex_1':
+..\ex_1.c:13:33: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+   13 |         printf("Addess of m: 0x%x\nValue of m: %d",&m,m);
+      |                                ~^                  ~~
+      |                                 |                  |
+      |                                 unsigned int       int *
+      |                                %n
+..\ex_1.c:17:43: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+   17 |         printf("\n\nAddess of pointer: 0x%x\nValue of pointer: %d",ab,*ab);
+      |                                          ~^                        ~~
+      |                                           |                        |
+      |                                           unsigned int             int *
+      |                                          %n
+..\ex_1.c:23:39: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+   23 |         printf("Addess of pointer: 0x%x\nValue of pointer: %d",ab,*ab);
+      |                                      ~^                        ~~
+      |                                       |                        |
+      |                                       unsigned int             int *
+      |                                      %n
+..\ex_1.c:29:39: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+   29 |         printf("Addess of pointer: 0x%x\nValue of pointer: %d",ab,*ab);
+      |                                      ~^                        ~~
+      |                                       |                        |
+      |                                       unsigned int             int *
+      |                                      %n
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_2.o "..\\ex_2.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_3.o "..\\ex_3.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_4.o "..\\ex_4.c" 
-..\ex_4.c: In function 'ex_4':
-..\ex_4.c:48:41: warning: unknown escape sequence: '\D'
-   48 |         printf("\Display inforamtion \n");
-      |                                         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_6.o "..\\ex_6.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_1.o "..\\ex_1.c" 
-..\ex_1.c: In function 'ex_1':
-..\ex_1.c:40:41: warning: unknown escape sequence: '\D'
-   40 |         printf("\Display inforamtion \n");
-      |                                         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_5.o "..\\ex_5.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o homework_5_structures.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o ex_6.o main.o 
-Info: Nothing to build for homework_5_structures
-Info: Nothing to build for homework_5_structures
-Info: Nothing to build for homework_5_structures
-Info: Nothing to build for homework_5_structures
+..\main.c:16:6: warning: return type of 'main' is not 'int' [-Wmain]
+   16 | void main(){
+      |      ^~~~
+gcc -o homework_6_pointers.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o main.o 
+d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: ex_5.o: in function `ex_1':
+D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../ex_5.c:9: multiple definition of `ex_1'; ex_1.o:D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../ex_1.c:11: first defined here
+d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: main.o: in function `main':
+D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../main.c:17: undefined reference to `ex_5'
+collect2.exe: error: ld returned 1 exit status
+12:29:02 **** Incremental Build of configuration Debug for project homework_6_pointers ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -o homework_6_pointers.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o main.o 
+d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: ex_5.o: in function `ex_1':
+D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../ex_5.c:9: multiple definition of `ex_1'; ex_1.o:D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../ex_1.c:11: first defined here
+d:/set up/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: main.o: in function `main':
+D:\Projects\learn_in_depth_workspace\C\homework_6_pointers\Debug/../main.c:17: undefined reference to `ex_5'
+collect2.exe: error: ld returned 1 exit status
+12:29:31 **** Incremental Build of configuration Debug for project homework_6_pointers ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ex_5.o "..\\ex_5.c" 
+gcc -o homework_6_pointers.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o main.o 
+12:30:25 **** Incremental Build of configuration Debug for project homework_6_pointers ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:16:6: warning: return type of 'main' is not 'int' [-Wmain]
+   16 | void main() {
+      |      ^~~~
+gcc -o homework_6_pointers.exe ex_1.o ex_2.o ex_3.o ex_4.o ex_5.o main.o 
+Info: Nothing to build for homework_6_pointers
+Info: Nothing to build for homework_6_pointers

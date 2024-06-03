@@ -1,0 +1,40 @@
+/*
+ * ex_4.c
+ *
+ *  Created on: Jun 3, 2024
+ *      Author: asus
+ */
+
+#include<stdio.h>
+
+void ex_4() {
+	int size, i, *ptr;
+
+	printf("Enter Size: ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d", &size);
+
+	int arr[size];
+
+	for (i = 0; i < size; i++) {
+		printf("element - %d: ", i + 1);
+		fflush(stdin);
+		fflush(stdout);
+		scanf("%d", arr + i);
+	}
+
+	printf("Output in reverse order\n");
+
+	ptr = arr + size-1;
+	i = size;
+
+	while(ptr != arr){
+		printf("element - %d: %d\n",i ,*ptr);
+		ptr--;
+		i--;
+	}
+	printf("element - %d: %d\n",i ,*ptr);
+
+
+}

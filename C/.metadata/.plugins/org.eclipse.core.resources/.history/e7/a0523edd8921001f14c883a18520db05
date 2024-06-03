@@ -1,0 +1,33 @@
+/*
+ * ex_3.c
+ *
+ *  Created on: Jun 3, 2024
+ *      Author: asus
+ */
+
+#include<stdio.h>
+
+void ex_3() {
+	char arr[20];
+	int strLen = 0;
+	char *ptr1, *ptr2;
+
+	printf("Enter Str: ");
+	fflush(stdin);
+	fflush(stdout);
+	gets(arr);
+
+	while (arr[strLen] != '\0')
+		strLen++;
+
+	ptr1 = arr;
+	ptr2 = arr + strLen - 1;
+
+	while (ptr1 != ptr2) {
+		*ptr1 = *ptr1 + *ptr2;
+		*ptr2 = *ptr1 - *ptr2;
+		*ptr1 = *ptr1 - *ptr2;
+	}
+
+	printf("Str: %s", arr);
+}

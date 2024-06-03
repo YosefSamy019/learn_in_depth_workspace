@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 3, 2024
+ *      Author: asus
+ */
+
+#include<stdio.h>
+
+void ex_1();
+void ex_2();
+void ex_3();
+void ex_4();
+
+void main(){
+	ex_4();
+}
+
+
