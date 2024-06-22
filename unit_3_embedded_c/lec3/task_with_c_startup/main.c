@@ -13,7 +13,8 @@
 #define CLR_BIT(reg,no) reg &= (~(1<<no))
 
 char arr1[100] = "Hello, Embedded C"; 	//data
-char arr2[50];							//bss
+char arr2[50];	
+						//bss
 const char arr3[25]="I am bored";		//rodata
 
 
@@ -27,10 +28,12 @@ void main(){
 	CLR_BIT(CRH_REG,22);
 	CLR_BIT(CRH_REG,23);
 
+
 	while(1){
 		SET_BIT(GPIOA_ODR_REG,13);
 		DELAY();
 		CLR_BIT(GPIOA_ODR_REG,13);
+		
 		DELAY();
 	}
 }
