@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1719351955 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\fifo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FIFO.h"
+
+1719351912 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\fifo\fifo.c
+	"FIFO.h"
+
+1719351787 d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\fifo\fifo.h
+

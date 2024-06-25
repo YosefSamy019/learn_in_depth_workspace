@@ -47,8 +47,8 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\</OutputDirectory>
-          <OutputName>unit3_lab4_cortexM4</OutputName>
+          <OutputDirectory>.\</OutputDirectory>
+          <OutputName>toggle_led_tiva_c</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -381,6 +381,18 @@
       <Groups>
         <Group>
           <GroupName>Source Group 1</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\startup.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

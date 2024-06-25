@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1719360087 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\linked_list\linked_list.c
+	<stdio.h>
+	"LINKED_LIST.h"
+
+1719360083 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\linked_list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LINKED_LIST.h"
+
+1719357712 d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\linked_list\linked_list.h
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1719347392 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\lifo\lifo.c
+	"LIFO.h"
+
+1719346921 d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\lifo\lifo.h
+
+1719347902 source:d:\projects\learn_in_depth_workspace\unit_4\lec_1_datastructure\lifo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LIFO.h"
+
