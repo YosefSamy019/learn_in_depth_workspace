@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1719616016 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\ca.c
+	"CA.h"
+
+1719616031 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"states.h"
+	"CA.h"
+	"US.h"
+	"MOTOR.h"
+
+1719615275 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\motor.c
+	"MOTOR.h"
+
+1719615287 d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\motor.h
+	"states.h"
+
+1719614539 d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\states.h
+
+1719614628 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\us.c
+	"US.h"
+
+1719614322 d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\us.h
+	"states.h"
+
+1719615366 d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\car_task_2\ca.h
+	"states.h"
+

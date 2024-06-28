@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1719583710 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\state_machine_car_go_stop\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CA.h"
+
+1719583514 d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\state_machine_car_go_stop\ca.h
+
+1719583642 source:d:\projects\learn_in_depth_workspace\unit_4\lec_2_sw_architecture\state_machine_car_go_stop\ca.c
+	"CA.h"
+
