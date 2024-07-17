@@ -1,0 +1,248 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x08000000                . = 0x8000000
+
+.text           0x08000000      0x4f4
+                0x08000000                _TEXT_START = .
+ *(.vectors*)
+ .vectors       0x08000000       0x18 startup.o
+ *(.text*)
+ .text          0x08000018       0xdc alarmManager.o
+                0x08000018                state_define_E_alarmOff
+                0x08000034                state_define_E_alarmOn
+                0x080000b0                Signal_onHighPressureDetect
+ .text          0x080000f4       0x70 buzzerDriver.o
+                0x080000f4                state_define_E_buzzerOff
+                0x08000110                state_define_E_buzzerOn
+                0x0800012c                Signal_turnOnBuzzer
+                0x08000148                Signal_turnOffBuzzer
+ .text          0x08000164      0x13c driver.o
+                0x08000164                getPressureVal
+                0x080001ac                Set_Alarm_actuator
+                0x080001fc                GPIO_INITIALIZATION
+ .text          0x080002a0       0x70 ledDriver.o
+                0x080002a0                state_define_E_ledOff
+                0x080002bc                state_define_E_ledOn
+                0x080002d8                Signal_turnOnLed
+                0x080002f4                Signal_turnOffLed
+ .text          0x08000310       0x48 main.o
+                0x08000310                main
+ .text          0x08000358       0x7c mainControl.o
+                0x08000358                state_define_E_MC_init
+                0x08000384                state_define_E_MC_update
+                0x080003b4                Signal_readPressureSensor
+ .text          0x080003d4       0x68 pressureSensorDriver.o
+                0x080003d4                state_define_E_PS_init
+                0x08000400                state_define_E_PS_update
+ .text          0x0800043c       0xb8 startup.o
+                0x0800043c                _reset
+                0x080004e8                _Vector_NMI
+                0x080004e8                _Vector_UsageFault
+                0x080004e8                _Vector_HardFault
+                0x080004e8                _Vector_BusFault
+                0x080004e8                _Vector_MemManage
+                0x080004e8                _Vector_deafultHandler
+                0x080004f4                . = ALIGN (0x4)
+                0x080004f4                _TEXT_END = .
+
+.glue_7         0x080004f4        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x080004f4        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x080004f4        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080004f4        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080004f4        0x0
+ .iplt          0x00000000        0x0 alarmManager.o
+
+.rodata         0x080004f4        0x4
+                0x080004f4                _RODATA_START = .
+ *(.rodata*)
+ .rodata        0x080004f4        0x4 mainControl.o
+                0x080004f4                threshld
+                0x080004f8                . = ALIGN (0x4)
+                0x080004f8                _RODATA_END = .
+
+.rel.dyn        0x080004f8        0x0
+ .rel.iplt      0x00000000        0x0 alarmManager.o
+
+.data           0x20000000       0x1c load address 0x080004f8
+                0x20000000                _DATA_START = .
+ *(.data*)
+ .data          0x20000000        0x4 alarmManager.o
+                0x20000000                ALARM_MANAGER_curCall
+ .data          0x20000004        0x8 buzzerDriver.o
+                0x20000008                Buzzer_curCall
+ .data          0x2000000c        0x0 driver.o
+ .data          0x2000000c        0x8 ledDriver.o
+                0x20000010                LED_curCall
+ .data          0x20000014        0x0 main.o
+ .data          0x20000014        0x4 mainControl.o
+                0x20000014                MC_curCall
+ .data          0x20000018        0x4 pressureSensorDriver.o
+                0x20000018                PS_curCall
+ .data          0x2000001c        0x0 startup.o
+                0x2000001c                . = ALIGN (0x4)
+                0x2000001c                _DATA_END = .
+
+.igot.plt       0x2000001c        0x0 load address 0x08000514
+ .igot.plt      0x00000000        0x0 alarmManager.o
+
+.bss            0x20000020     0x1024 load address 0x08000518
+                0x20000020                _BSS_START = .
+ *(.bss*)
+ .bss           0x20000020       0x10 alarmManager.o
+ .bss           0x20000030        0x0 buzzerDriver.o
+ .bss           0x20000030        0x8 driver.o
+                0x20000030                p
+                0x20000034                count
+ .bss           0x20000038        0x0 ledDriver.o
+ .bss           0x20000038        0x0 main.o
+ .bss           0x20000038        0x8 mainControl.o
+ .bss           0x20000040        0x1 pressureSensorDriver.o
+ .bss           0x20000041        0x0 startup.o
+ *(COMMON)
+                0x20000044                . = ALIGN (0x4)
+ *fill*         0x20000041        0x3 
+                0x20000044                _BSS_END = .
+                0x20001044                . = (. + 0x1000)
+ *fill*         0x20000044     0x1000 
+                0x20001044                _STACK_TOP = .
+LOAD alarmManager.o
+LOAD buzzerDriver.o
+LOAD driver.o
+LOAD ledDriver.o
+LOAD main.o
+LOAD mainControl.o
+LOAD pressureSensorDriver.o
+LOAD startup.o
+OUTPUT(pressure_controller.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x8f9
+ .debug_info    0x00000000      0x117 alarmManager.o
+ .debug_info    0x00000117      0x12d buzzerDriver.o
+ .debug_info    0x00000244      0x117 driver.o
+ .debug_info    0x0000035b      0x12d ledDriver.o
+ .debug_info    0x00000488       0xf5 main.o
+ .debug_info    0x0000057d      0x146 mainControl.o
+ .debug_info    0x000006c3      0x11f pressureSensorDriver.o
+ .debug_info    0x000007e2      0x117 startup.o
+
+.debug_abbrev   0x00000000      0x553
+ .debug_abbrev  0x00000000       0xa2 alarmManager.o
+ .debug_abbrev  0x000000a2       0xad buzzerDriver.o
+ .debug_abbrev  0x0000014f       0xc8 driver.o
+ .debug_abbrev  0x00000217       0xad ledDriver.o
+ .debug_abbrev  0x000002c4       0x70 main.o
+ .debug_abbrev  0x00000334       0xd7 mainControl.o
+ .debug_abbrev  0x0000040b       0xad pressureSensorDriver.o
+ .debug_abbrev  0x000004b8       0x9b startup.o
+
+.debug_loc      0x00000000      0x404
+ .debug_loc     0x00000000       0x84 alarmManager.o
+ .debug_loc     0x00000084       0xb0 buzzerDriver.o
+ .debug_loc     0x00000134       0x9c driver.o
+ .debug_loc     0x000001d0       0xb0 ledDriver.o
+ .debug_loc     0x00000280       0x2c main.o
+ .debug_loc     0x000002ac       0x90 mainControl.o
+ .debug_loc     0x0000033c       0x64 pressureSensorDriver.o
+ .debug_loc     0x000003a0       0x64 startup.o
+
+.debug_aranges  0x00000000      0x100
+ .debug_aranges
+                0x00000000       0x20 alarmManager.o
+ .debug_aranges
+                0x00000020       0x20 buzzerDriver.o
+ .debug_aranges
+                0x00000040       0x20 driver.o
+ .debug_aranges
+                0x00000060       0x20 ledDriver.o
+ .debug_aranges
+                0x00000080       0x20 main.o
+ .debug_aranges
+                0x000000a0       0x20 mainControl.o
+ .debug_aranges
+                0x000000c0       0x20 pressureSensorDriver.o
+ .debug_aranges
+                0x000000e0       0x20 startup.o
+
+.debug_line     0x00000000      0x408
+ .debug_line    0x00000000       0x79 alarmManager.o
+ .debug_line    0x00000079       0x6c buzzerDriver.o
+ .debug_line    0x000000e5       0x9d driver.o
+ .debug_line    0x00000182       0x66 ledDriver.o
+ .debug_line    0x000001e8       0xc4 main.o
+ .debug_line    0x000002ac       0x68 mainControl.o
+ .debug_line    0x00000314       0x78 pressureSensorDriver.o
+ .debug_line    0x0000038c       0x7c startup.o
+
+.debug_str      0x00000000      0x475
+ .debug_str     0x00000000      0x168 alarmManager.o
+                                0x1a4 (size before relaxing)
+ .debug_str     0x00000168       0x9f buzzerDriver.o
+                                0x1aa (size before relaxing)
+ .debug_str     0x00000207       0x4e driver.o
+                                0x136 (size before relaxing)
+ .debug_str     0x00000255       0x7e ledDriver.o
+                                0x18c (size before relaxing)
+ .debug_str     0x000002d3       0x22 main.o
+                                0x150 (size before relaxing)
+ .debug_str     0x000002f5       0x8d mainControl.o
+                                0x190 (size before relaxing)
+ .debug_str     0x00000382       0x69 pressureSensorDriver.o
+                                0x18e (size before relaxing)
+ .debug_str     0x000003eb       0x8a startup.o
+                                0x104 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 alarmManager.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 buzzerDriver.o
+ .comment       0x00000000       0x12 driver.o
+ .comment       0x00000000       0x12 ledDriver.o
+ .comment       0x00000000       0x12 main.o
+ .comment       0x00000000       0x12 mainControl.o
+ .comment       0x00000000       0x12 pressureSensorDriver.o
+ .comment       0x00000000       0x12 startup.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 alarmManager.o
+ .ARM.attributes
+                0x00000033       0x33 buzzerDriver.o
+ .ARM.attributes
+                0x00000066       0x33 driver.o
+ .ARM.attributes
+                0x00000099       0x33 ledDriver.o
+ .ARM.attributes
+                0x000000cc       0x33 main.o
+ .ARM.attributes
+                0x000000ff       0x33 mainControl.o
+ .ARM.attributes
+                0x00000132       0x33 pressureSensorDriver.o
+ .ARM.attributes
+                0x00000165       0x33 startup.o
+
+.debug_frame    0x00000000      0x2d4
+ .debug_frame   0x00000000       0x64 alarmManager.o
+ .debug_frame   0x00000064       0x78 buzzerDriver.o
+ .debug_frame   0x000000dc       0x60 driver.o
+ .debug_frame   0x0000013c       0x78 ledDriver.o
+ .debug_frame   0x000001b4       0x2c main.o
+ .debug_frame   0x000001e0       0x60 mainControl.o
+ .debug_frame   0x00000240       0x48 pressureSensorDriver.o
+ .debug_frame   0x00000288       0x4c startup.o
