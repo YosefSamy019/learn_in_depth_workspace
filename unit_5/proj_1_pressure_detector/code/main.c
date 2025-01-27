@@ -31,3 +31,27 @@ int main() {
     
     return 1;
 }
+
+/*
+
+void fun1(void){
+    char x=8;
+}
+
+int getValue(){
+    return 1;
+}
+
+void main(){
+    char A = 10;
+    char B;
+    B = getValue();
+
+    if(B<10){
+        fun1();
+    }else{
+        char z = 5;
+        fun1();
+    }
+}
+ */

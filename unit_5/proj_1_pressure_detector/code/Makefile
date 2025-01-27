@@ -39,6 +39,7 @@ assembly:  $(PROJ_NAME).bin $(PROJ_NAME).hex $(_C_TO_S) util
 util: 
 	#$(CC)objdump -h $(PROJ_NAME).elf
 	#$(CC)objdump -D $(PROJ_NAME).elf
+	#$(CC)objdump -d $(PROJ_NAME).elf
 	#$(CC)objdump -x $(PROJ_NAME).elf
 
 	#$(CC)nm $(PROJ_NAME).elf
